@@ -18,6 +18,7 @@
 		86EB90951B54CC46004F120D /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86EB908F1B54CC46004F120D /* CollectionViewCell.xib */; };
 		86EB90961B54CC46004F120D /* CollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EB90911B54CC46004F120D /* CollectionViewDataSource.m */; };
 		86EB90971B54CC46004F120D /* ExtendsCollectionViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EB90931B54CC46004F120D /* ExtendsCollectionViewDelegate.m */; };
+		86F2A8651B5C8BE000AA860A /* FullyHorizontalFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F2A8641B5C8BE000AA860A /* FullyHorizontalFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		86EB90911B54CC46004F120D /* CollectionViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewDataSource.m; sourceTree = "<group>"; };
 		86EB90921B54CC46004F120D /* ExtendsCollectionViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendsCollectionViewDelegate.h; sourceTree = "<group>"; };
 		86EB90931B54CC46004F120D /* ExtendsCollectionViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendsCollectionViewDelegate.m; sourceTree = "<group>"; };
+		86F2A8631B5C8BE000AA860A /* FullyHorizontalFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullyHorizontalFlowLayout.h; sourceTree = "<group>"; };
+		86F2A8641B5C8BE000AA860A /* FullyHorizontalFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullyHorizontalFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 				86EB90911B54CC46004F120D /* CollectionViewDataSource.m */,
 				86EB90921B54CC46004F120D /* ExtendsCollectionViewDelegate.h */,
 				86EB90931B54CC46004F120D /* ExtendsCollectionViewDelegate.m */,
+				86F2A8631B5C8BE000AA860A /* FullyHorizontalFlowLayout.h */,
+				86F2A8641B5C8BE000AA860A /* FullyHorizontalFlowLayout.m */,
 				86EB90741B54CBE4004F120D /* Images.xcassets */,
 				86EB90761B54CBE4004F120D /* LaunchScreen.xib */,
 				86EB90671B54CBE4004F120D /* Supporting Files */,
@@ -238,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86F2A8651B5C8BE000AA860A /* FullyHorizontalFlowLayout.m in Sources */,
 				86EB90961B54CC46004F120D /* CollectionViewDataSource.m in Sources */,
 				86EB90701B54CBE4004F120D /* ViewController.m in Sources */,
 				86EB906D1B54CBE4004F120D /* AppDelegate.m in Sources */,
@@ -434,6 +440,7 @@
 				86EB90891B54CBE4004F120D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		86EB908A1B54CBE4004F120D /* Build configuration list for PBXNativeTarget "ExtendsCollectionTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +449,7 @@
 				86EB908C1B54CBE4004F120D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

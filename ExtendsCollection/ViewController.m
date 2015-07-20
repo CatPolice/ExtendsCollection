@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "CollectionViewCell.h"
 #import "CollectionViewDataSource.h"
+#import "FullyHorizontalFlowLayout.h"
 
 @interface ViewController ()
 
@@ -27,11 +28,22 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    
+    FullyHorizontalFlowLayout *collectionViewLayout = [FullyHorizontalFlowLayout new];
+    
+    collectionViewLayout.itemSize = CGSizeMake(50. , 50.);
+    //collectionViewLayout.nbColumns = 5;
+    //collectionViewLayout.nbLines = 3;
+    
+    [self.myCollection setCollectionViewLayout:collectionViewLayout];
+    
+    
+    
     [self.myCollection registerNib:[UINib nibWithNibName:@"CollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"CollectionViewCell"];
     
     self.dic = [[NSMutableDictionary alloc] init];
     
-    self.arr = @[@"1",@"2",@"3",@"4",@"5",@"6"];
+    self.arr = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12",@"13",@"14"];
     
     [self setupCollectionView];
 }
