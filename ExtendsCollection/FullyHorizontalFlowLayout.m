@@ -32,9 +32,7 @@
     NSInteger yD = O % nbColumns;
     
     NSInteger D = xD + yD * nbLines + idxPage * nbColumns * nbLines;
-    
-    
-    
+
     if (idxPage > 0) {
         NSIndexPath *fakeIndexPath ;
         if (D == indexPath.row) {
@@ -51,9 +49,6 @@
         UICollectionViewLayoutAttributes *attributes = [super layoutAttributesForItemAtIndexPath:fakeIndexPath];
         return attributes;
     }
-    
-    
-    
 
     // return them to collection view
 //    return attributes;
@@ -84,15 +79,21 @@
     return YES;
 }
 
-- (CGSize)collectionViewContentSize{
-    CGSize size = [super collectionViewContentSize];
-    
-    CGFloat collectionViewWidth = self.collectionView.frame.size.width;
-    NSInteger nbOfScreens = (int)ceil((size.width / collectionViewWidth));
-    
-    CGSize newSize = CGSizeMake((nbOfScreens) * collectionViewWidth, size.height);
-    
-    return newSize;
-}
+
+#pragma mark 
+#pragma mark return collectin content size 
+
+//- (CGSize)collectionViewContentSize{
+//    
+//    CGSize size = [super collectionViewContentSize];
+//    
+//    CGFloat collectionViewWidth = self.collectionView.frame.size.width;
+//    NSInteger nbOfScreens = (int)ceil((size.width / collectionViewWidth));
+//    
+//    CGSize newSize = CGSizeMake((nbOfScreens) * collectionViewWidth, size.height);
+//    
+//    
+//    return newSize;
+//}
 
 @end

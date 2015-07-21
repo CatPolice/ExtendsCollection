@@ -36,9 +36,7 @@
     //collectionViewLayout.nbLines = 3;
     
     [self.myCollection setCollectionViewLayout:collectionViewLayout];
-    
-    
-    
+
     [self.myCollection registerNib:[UINib nibWithNibName:@"CollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"CollectionViewCell"];
     
     self.dic = [[NSMutableDictionary alloc] init];
