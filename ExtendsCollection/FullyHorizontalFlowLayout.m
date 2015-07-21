@@ -33,11 +33,30 @@
     
     NSInteger D = xD + yD * nbLines + idxPage * nbColumns * nbLines;
     
-    NSIndexPath *fakeIndexPath = [NSIndexPath indexPathForItem:D inSection:indexPath.section];
-    UICollectionViewLayoutAttributes *attributes = [super layoutAttributesForItemAtIndexPath:fakeIndexPath];
+    
+    
+    if (idxPage > 0) {
+        NSIndexPath *fakeIndexPath ;
+        if (D == indexPath.row) {
+            fakeIndexPath = [NSIndexPath indexPathForItem:D inSection:indexPath.section];
+        }else{
+            fakeIndexPath = [NSIndexPath indexPathForItem:indexPath.row inSection:indexPath.section];
+        }
+
+        UICollectionViewLayoutAttributes *attributes = [super layoutAttributesForItemAtIndexPath:fakeIndexPath];
+        return attributes;
+        
+    }else{
+        NSIndexPath *fakeIndexPath = [NSIndexPath indexPathForItem:D inSection:indexPath.section];
+        UICollectionViewLayoutAttributes *attributes = [super layoutAttributesForItemAtIndexPath:fakeIndexPath];
+        return attributes;
+    }
+    
+    
+    
 
     // return them to collection view
-    return attributes;
+//    return attributes;
 }
 
 -(NSArray*)layoutAttributesForElementsInRect:(CGRect)rect
